@@ -1,0 +1,7 @@
+{
+  "name": "pi-experiments",
+  "version": "1.0",
+  "dependencies": {
+    "raspi": "^3.0.5"
+  }
+}
