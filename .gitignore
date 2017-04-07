@@ -2,6 +2,7 @@
 *.log
 *.pid
 *.seed
+core
 logs
 node_modules
 npm-debug.log*
