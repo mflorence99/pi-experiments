@@ -1,9 +1,6 @@
-.AppleDouble/
 *.log
-*.pid
-*.seed
 core
-logs
-node_modules
-npm-debug.log*
-pids
+dist.tar.gz
+dist/
+home.html
+node_modules/

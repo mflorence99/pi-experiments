@@ -1,22 +1,35 @@
 {
+  "angularCompilerOptions": {
+    "genDir": "./dist",
+    "skipMetadataEmit" : true,
+    "skipTemplateCodegen": true
+  },
   "compilerOptions": {
     "alwaysStrict": true,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["DOM", "ES2015", "ScriptHost"],
-    "module": "system",
+    "lib": ["dom", "es2015"],
+    "module": "es2015",
     "moduleResolution": "node",
+    "noEmitOnError": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "outDir": "./dist",
     "pretty": true,
+    "rootDir": ".",
+    "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "ES5",
+    "target": "es5",
     "typeRoots": [
       "node_modules/@types"
     ]
   },
   "exclude": [
-    "node_modules"
+    "dist"
+  ],
+  "include": [
+    "**/*.ts"
   ]
 }
