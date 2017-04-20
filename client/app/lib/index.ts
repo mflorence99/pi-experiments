@@ -2,6 +2,7 @@ import * as lib from './';
 
 import {ModuleWithProviders, NgModule} from '@angular/core';
 
+export * from './components/no-data-on-page';
 export * from './pipes/breakable';
 export * from './pipes/ellipsize';
 export * from './pipes/jsonify';
@@ -9,7 +10,8 @@ export * from './pipes/jsonify';
 const DECLARATIONS = [
   lib.BreakablePipe,
   lib.EllipsizePipe,
-  lib.JSONifyPipe
+  lib.JSONifyPipe,
+  lib.NoDataOnPageComponent
 ];
 
 @NgModule({
@@ -24,10 +26,10 @@ const DECLARATIONS = [
 
 })
 
-export class LibModule {
+export class PiModule {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: LibModule,
+      ngModule: PiModule,
       providers: []
     };
   }

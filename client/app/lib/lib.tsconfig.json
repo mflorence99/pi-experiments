@@ -16,7 +16,6 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./dist",
     "pretty": true,
     "rootDir": ".",
     "sourceMap": true,
@@ -26,10 +25,7 @@
       "node_modules/@types"
     ]
   },
-  "exclude": [
-    "dist"
-  ],
   "include": [
-    "**/*.ts"
+    "./dist/**/*.ts"
   ]
 }
