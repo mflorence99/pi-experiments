@@ -3,7 +3,8 @@ import {Pipe, PipeTransform} from '@angular/core';
 
 /** JSON-ify string */
 
-@Pipe({ name: 'jsonify' })
+@Pipe({ name: 'piJSONify' })
+
 export class JSONifyPipe implements PipeTransform {
 
   transform(s: string) {

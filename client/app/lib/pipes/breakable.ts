@@ -3,7 +3,8 @@ import {Pipe, PipeTransform} from '@angular/core';
 
 /** Make string breakable */
 
-@Pipe({ name: 'breakable' })
+@Pipe({ name: 'piBreakable' })
+
 export class BreakablePipe implements PipeTransform {
 
   transform(s: string,

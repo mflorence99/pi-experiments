@@ -3,7 +3,8 @@ import {Pipe, PipeTransform} from '@angular/core';
 
 /** Ellipsize string */
 
-@Pipe({ name: 'ellipsize' })
+@Pipe({ name: 'piEllipsize' })
+
 export class EllipsizePipe implements PipeTransform {
 
   transform(s: string, max = 100) {
