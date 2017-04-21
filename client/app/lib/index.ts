@@ -1,8 +1,11 @@
 import * as lib from './';
 
-import {ModuleWithProviders, NgModule} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, ModuleWithProviders, NgModule} from '@angular/core';
+
+import { CommonModule } from '@angular/common';
 
 export * from './components/no-data-on-page';
+export * from './components/polymer-app';
 export * from './pipes/breakable';
 export * from './pipes/ellipsize';
 export * from './pipes/jsonify';
@@ -13,7 +16,8 @@ const DECLARATIONS = [
   lib.BreakablePipe,
   lib.EllipsizePipe,
   lib.JSONifyPipe,
-  lib.NoDataOnPageComponent
+  lib.NoDataOnPageComponent,
+  lib.PolymerAppComponent
 ];
 
 const PROVIDERS = [
@@ -30,9 +34,15 @@ const PROVIDERS = [
     ...DECLARATIONS
   ],
 
+  imports: [
+    CommonModule
+  ],
+
   providers: [
     ...PROVIDERS
-  ]
+  ],
+
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
 

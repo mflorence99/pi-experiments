@@ -36,6 +36,7 @@ function compile() {
 // copy root files
 function copyRoot() {
   var globs = [
+    path.join(source, 'theme.html'),
     path.join(source, 'package.json')
   ];
   return gulp.src(globs)
